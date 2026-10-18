@@ -101,43 +101,42 @@ footer{text-align:center;color:var(--mute);font-size:.8rem;padding:30px 20px 40p
      ===================================================================== -->
 <script>
 const SITE = {
-  nameTh:  "ชื่อ-นามสกุล ภาษาไทย",
+  nameTh:  "ภิญนิตา ซิ่วมณี",
   nameEn:  "FERN",
-  sec:     "66/xx",
-  id:      "6642450xx",
+  sec:     "66/44",
+  id:      "664245042",
   course:  "ฐานข้อมูลขั้นสูง (Advanced Database)",
   about:   "หน้านี้รวบรวมการบ้านและผลงานในรายวิชาฐานข้อมูลขั้นสูง ตั้งแต่ Transaction ใน MySQL ไปจนถึงระบบแนะนำสุนัขด้วย Graph Database (Neo4j) เลือกดูงานจากเมนูด้านบนได้เลย",
   homework: [
     {
-      emoji: "🔁", title: "Lab Week 2: Transaction, Concurrency & Recovery",
+      emoji: "", title: "Lab Week 2: Transaction, Concurrency & Recovery",
       desc: "ทดลองการทำงานของ Transaction ใน MySQL บน Google Colab ผ่านระบบรายงานข่าวปลอม (Fake News Report)",
       points: ["Dirty Read: เทียบ READ UNCOMMITTED กับ READ COMMITTED", "Atomic Transaction และการ Rollback เมื่อ report ซ้ำ", "Lost Update และการแก้ด้วย Atomic UPDATE", "Benchmark Autocommit vs Explicit Transaction", "Deadlock + Retry แบบ Exponential Backoff และ Redo/Undo Log"],
       tags: ["MySQL", "Python", "Google Colab", "ACID"],
-      links: [{ label: "เปิดใน Google Colab", url: "" }]
-    },
+      links: [{ label: "เปิดใน Google Colab", url: "https://colab.research.google.com/drive/1U8FYRSNgL7hc29iH1Pcn2KunldzduDJx?usp=sharing
     {
-      emoji: "🕸️", title: "Dog Recommendation Graph ด้วย Neo4j",
+      emoji: "", title: "Dog Recommendation Graph ด้วย Neo4j",
       desc: "ออกแบบกราฟผู้เลี้ยง สายพันธุ์ และลักษณะของสุนัข แล้วเขียน Cypher แนะนำสายพันธุ์จากสุนัขที่เพื่อนเลี้ยงและลักษณะที่ตรงกับความต้องการ",
       points: ["ออกแบบ Node 3 ประเภท และ Relationship 4 แบบ", "นับคะแนนจากเพื่อน แล้วตัดพันธุ์ที่เลี้ยงอยู่แล้วออก", "บวกคะแนนจากลักษณะที่ตรงกัน ผลอันดับเปลี่ยนจาก Golden Retriever เป็น Poodle", "บันทึกผลเป็นเส้น RECOMMENDED และทำเป็นฟังก์ชัน Python"],
       tags: ["Neo4j", "Cypher", "Graph Model"],
       links: [{ label: "ดูรายงาน (PDF)", url: "" }]
     },
     {
-      emoji: "🐕", title: "Dog Recommendation Graph (NetworkX)",
+      emoji: "", title: "Dog Recommendation Graph (NetworkX)",
       desc: "ระบบแนะนำสุนัขด้วยโมเดลกราฟสองฝั่ง (Owner–Breed) เปิดและรันได้บน Google Colab",
       points: ["สร้าง Bipartite Graph และวาดภาพด้วย NetworkX", "หาคนที่ชอบคล้ายกันจาก Neighbor ของกราฟ", "นับเส้นทางด้วย Counter เพื่อจัดอันดับคำแนะนำ", "กรองคำแนะนำด้วยงบค่าเลี้ยงดูและการอยู่คอนโด"],
       tags: ["NetworkX", "Python", "Collaborative Filtering"],
-      links: [{ label: "เปิดใน Google Colab", url: "" }]
+      links: [{ label: "เปิดใน Google Colab", url: "https://colab.research.google.com/drive/1GYY9MQB2RCMEZiq7Y-59sp9aEJ-cQpxN?usp=sharing" }]
     },
     {
-      emoji: "📊", title: "Dog Neo4j Show Data",
+      emoji: "", title: "Dog Neo4j Show Data",
       desc: "เชื่อมต่อ Neo4j Aura จาก Google Colab สร้างข้อมูล แสดงผลเป็นตารางและกราฟ แล้วแนะนำสุนัข 3 แบบ",
       points: ["สร้าง Node และ Relationship ด้วย UNWIND + MERGE", "แสดงข้อมูลเป็นตาราง ตารางไขว้ และกราฟ 3 คอลัมน์", "แนะนำจากคนที่ชอบคล้ายกัน และจากกลุ่มสายพันธุ์เดียวกัน", "Hybrid Recommendation พร้อมตัวกรองคอนโด"],
       tags: ["Neo4j Aura", "Python Driver", "pandas"],
-      links: [{ label: "เปิดใน Google Colab", url: "" }]
+      links: [{ label: "เปิดใน Google Colab", url: "https://colab.research.google.com/drive/1SG9wM9hgrlXFUNuhnDt8OYd261cWr4kq?usp=sharing" }]
     },
     {
-      emoji: "✨", title: "DogRecommet: ระบบแนะนำสุนัข",
+      emoji: "", title: "DogRecommet: ระบบแนะนำสุนัข",
       desc: "เว็บแอปแนะนำสุนัขด้วย Graph Database (Neo4j) สร้างด้วย Streamlit บอกเหตุผลของคำแนะนำได้ทุกครั้ง พร้อมเอกสารอธิบายระบบ",
       points: ["คะแนน = (คนที่ชอบคล้ายกัน × 2) + (กลุ่มเดียวกัน × 1)", "การ์ดคำแนะนำพร้อมรูป อันดับ คะแนน และเหตุผล", "เพิ่ม แก้ไข ลบข้อมูล และ Graph Explorer", "Deploy บน Streamlit Community Cloud"],
       tags: ["Streamlit", "Neo4j Aura", "Web App"],
